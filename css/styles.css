@@ -52,6 +52,10 @@ body {
   color: var(--title-text-color);
 }
 
+#blue {
+  color: var(--button-blue-color);
+}
+
 .contacts .link {
   font-weight: 500;
   line-height: 1.14;
@@ -122,10 +126,16 @@ body {
   font-size: 16px;
   line-height: 1.19;
   color: var(--title-text-color);
+  text-align: center;
 }
 
 .title-proffesion {
   font-size: 16px;
+  text-align: center;
+}
+
+.command {
+  background-color: var(--bgd-button-color);
 }
 
 /* Portfolio */
@@ -142,6 +152,11 @@ body {
 
 .portfolio-button:hover,
 .portfolio-button:focus {
+  background-color: var(--button-blue-color);
+  color: var(--primary-white-color);
+}
+
+.portfolio-item > button.portfolio-button {
   background-color: var(--button-blue-color);
   color: var(--primary-white-color);
 }
@@ -180,6 +195,11 @@ body {
 .footer .link {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .link:hover,
+.footer .link:active {
+  color: var(--primary-white-color);
 }
 
 .address > a.link {
