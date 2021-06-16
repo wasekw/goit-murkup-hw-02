@@ -78,6 +78,9 @@ body {
 .hero {
   background-color: var(--main-hiro-color);
   text-align: center;
+}
+
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -91,7 +94,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   color: var(--primary-white-color);
   cursor: pointer;
 }
@@ -109,6 +111,18 @@ body {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
+
+/*  Данные из фигмы для .advantage .title (h3) 
+все совпадает
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;  
+
 
 /* Work  and Command*/
 
