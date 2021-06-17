@@ -114,6 +114,7 @@ body {
 .advantage-list-title {
   font-weight: 700;
   line-height: 1.14;
+  font-size: 14px;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
