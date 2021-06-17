@@ -8,12 +8,14 @@
   --logo-color: #000000;
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --bgd-button-color: #f5f4fa;
+  --main-font: "Roboto", sans-serif;
+  --second-font: "Raleway", sans-serif;
 }
 
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -21,13 +23,14 @@ body {
   line-height: 1.71;
 }
 
-/* Header */
+/* ============ HEADER=================== */
+
 .colorword {
   color: var(--button-blue-color);
 }
 
 .logo {
-  font-family: Raleway, sans-serif;
+  font-family: var(--second-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -45,35 +48,36 @@ body {
   cursor: default;
 }
 
-.site-nav .link {
+.header-nav-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
 
-#blue {
-  color: var(--button-blue-color);
-}
-
-.contacts .link {
+.link-contact {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  list-style-type: none;
   color: var(--primary-text-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.header-nav-link:hover,
+.header-nav-link:focus {
   color: var(--button-blue-color);
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.link-contact:hover,
+.link-contact:focus {
   color: var(--button-blue-color);
 }
-/* Hero */
+
+.current.header-nav-link {
+  color: var(--button-blue-color);
+}
+/* ============END HEADER================== */
+
+/* ============HERO======================== */
 
 .hero {
   background-color: var(--main-hiro-color);
@@ -103,39 +107,30 @@ body {
   background-color: var(--button-hover-color);
 }
 
-/* Advantage */
+/* ================END HERO=================== */
 
-.advantage .title {
+/* ===============ADVANTAGE================== */
+
+.advantage-list-title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
+/* ================END ADVANTAGE=========== */
 
-/*  Данные из фигмы для .advantage .title (h3) 
-все совпадает
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #212121;  
+/* =============OUR WORKS AND TEAM=======*/
 
-
-/* Work  and Command*/
-
-.work .title,
-.command .title-command {
+.work-title,
+.title-team {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
 }
 
-.command .title-name {
+.team-title-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -143,16 +138,19 @@ color: #212121;
   text-align: center;
 }
 
-.title-proffesion {
+.team-title-proffesion {
+  font-weight: 400;
   font-size: 16px;
   text-align: center;
 }
 
-.command {
+.team {
   background-color: var(--bgd-button-color);
 }
 
-/* Portfolio */
+/* ========END OUR WORKS AND TEAM=============== */
+
+/* ============PORTFOLIO=========================D */
 
 .portfolio-button {
   background-color: var(--bgd-button-color);
@@ -170,7 +168,7 @@ color: #212121;
   color: var(--primary-white-color);
 }
 
-.portfolio-item > button.portfolio-button {
+.portfolio-button.current {
   background-color: var(--button-blue-color);
   color: var(--primary-white-color);
 }
@@ -189,30 +187,28 @@ color: #212121;
   color: var(--primary-text-color);
 }
 
-/* Footer */
+/* ===========END PORTFOLIO===================== */
+
+/* ===============FOOTER======================== */
 
 .footer {
   background-color: var(--main-hiro-color);
 }
-.footer .logo {
-  font-family: Raleway, sans-serif;
+.footer-logo-link {
+  font-family: var(--second-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--primary-white-color);
 }
 
-.footer .colorword {
-  color: var(--button-blue-color);
-}
-
-.footer .link {
+.footer-link {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer .link:hover,
-.footer .link:active {
+.footer-link:hover,
+.footer-link:active {
   color: var(--primary-white-color);
 }
 
